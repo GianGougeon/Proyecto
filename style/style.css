@@ -46,7 +46,9 @@
     justify-content: space-around;
     
 }
-
+.menu-ul{
+    margin-top: 30px;
+}
 #menu li {
     float: left;
     display: inline;
@@ -80,6 +82,7 @@
 
 .header-txt:hover {
     background-size: 100% 2px;
+    color: white;
 
 }
 
@@ -167,6 +170,7 @@
     list-style: none;
     text-decoration: none;
     transition: all 0.3s;
+    padding-top: 10px;
 }
 
 .logo:hover {
@@ -205,7 +209,9 @@
         
         
     }
-
+    .menu-ul{
+        margin-top: 0;
+    }
     #menu li {
         display: block;
         float: none;
@@ -252,6 +258,7 @@
         transition: all 0.3s;
         align-content: flex-start;
         justify-content: center;
+        padding-top: 0;
     }
     
     .logo:hover {
@@ -328,6 +335,7 @@
     font-family: 'Yellowtail';
     font-size: 8vw;
     cursor: default;
+    font-weight: bold
 }
 
 /* --------------------- Ofertas diseño superior --------------------- */
