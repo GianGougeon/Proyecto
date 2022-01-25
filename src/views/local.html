@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <!-- css -->
     <link rel="stylesheet" href="../../style/style.css">
     <title>Nuestro Local - GenGe</title>
 </head>
+
 <body>
     <!-- Encabezado -->
     <header>
         <nav id='menu'>
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-
-            <ul>
+            <ul class="menu-ul">
                 <div>
-                    <li><a class="logo" href='index.html'>Ge</a></li>
+                    <li>
+                        <a class="logo" href='../../index.html'>Ge</a>
+                    </li>
                 </div>
-
-                <li><a class='dropdown-arrow a-diable header-txt' href='http://'>
+                <li>
+                    <a class='dropdown-arrow a-diable header-txt'>
                         <p class="header-effect">Tienda</p>
                     </a>
-
                     <ul class='sub-menus'>
-
-                        <li><a class="header-txt" href='../../index.html#tienda'>Coleccion</a></li>
+                        <!-- <li><a class="header-txt" href='index.html#tienda'>Coleccion</a></li> -->
                         <li><a class="header-txt" href='./remeras.html'>Remeras</a></li>
                         <li><a class="header-txt" href='./pantalones.html'>Pantalones</a></li>
                         <li><a class="header-txt" href='./camperas.html'>Camperas</a></li>
                     </ul>
                 </li>
-                <li><a class="header-txt" href='../../index.html#nuevo'>
+                <li>
+                    <a class="header-txt" href='../../index.html#nuevo'>
                         <p class="header-effect">Nuevo</p>
-                    </a></li>
-                <li><a class="header-txt" href='./local.html'>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-txt" href='./local.html'>
                         <p class="header-effect">Nuestro Local</p>
-                    </a></li>
-                <li><a class="header-txt" href='./nosotros.html'>
-                        <p class="src/views/nosotros.html">Nosotros</p>
-                    </a></li>
-
-
+                    </a>
+                </li>
+                <li>
+                    <a class="header-txt" href='./nosotros.html'>
+                        <p class="header-effect">Nosotros</p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <section>
+    <!-- divisor -->
+    <div class="divider"></div>
 
 
 
 
-    </section>
+
+
+
     <section class="sec-local">
         <!-- informacion -->
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt assumenda corrupti excepturi quidem unde
-            voluptate omnis laborum culpa eaque repudiandae enim corporis maiores ea esse itaque deleniti dolores,
-            soluta consectetur.
-        </p>
-    </section>
-    <section class="sec-map">
-        <!-- maps -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6343.982620894113!2d-53.50718314691385!3d66.577344885702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e90ed56794a4cc3%3A0x7070b3882a337b63!2sItivdleq%2C%20Groenlandia!5e0!3m2!1ses-419!2suy!4v1639327503873!5m2!1ses-419!2suy"
-            width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="page-title">
+            <h1>Nuestro local - Montevideo</h1>
+        </div>
     </section>
 
+    <section class="container sec-map-txt">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="sec-map">
+                    <!-- maps -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.2277280093153!2d-56.17941468830757!3d-34.90073419526873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f804b20ceaf67%3A0xc26e4ce4253c2efe!2sMercedes%201802%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1643145673211!5m2!1ses-419!2suy"
+                        width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div>
+                    <p class="local-dire">
+                        <strong>
+                            Montevideo:
+                        </strong>
+                        <br>Mercedes 1802
+                        <br>Teléfono: (+598) 99 999 999
+                        <br>Horario:
+                        Lunes
+                        a viernes de 9:30 a 18:00, sábados de 9:30-13:30
+                        <br>Correo electrónico:
+                        info@olivaressaltenios.com.uy</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- divisor -->
+    <div class="divider"></div>
 
 
 
@@ -85,13 +136,13 @@
         <div class="contacto-ft">
             <h3 class="ft-h3 ft-subline">Contacto:</h3>
             <p class="ft-list">
-                Direccion: 
+                Direccion: Mercedes 1802
             </p>
             <p class="ft-list">
-                Whatsapp: 
+                Whatsapp: (+598) 99 999 999
             </p>
             <p class="ft-list">
-                Horarios: 
+                Horarios:
             </p>
         </div>
 
@@ -129,7 +180,8 @@
             <h3 class="ft-h3 ft-subline ft-faq">FAQ:</h3>
             <nav>
                 <ul class="txt-decoration">
-                    <li><a href="./nosotros.html" class="txt-decoration ft-list ft-faq-list">• Quienes somos</a></li>
+                    <li><a href="./nosotros.html" class="txt-decoration ft-list ft-faq-list">• Quienes somos</a>
+                    </li>
                     <li><a href="./local.html" class="txt-decoration ft-list ft-faq-list">• Nuestro local</a></li>
                     <li><a href="./nosotros.html" class="txt-decoration ft-list ft-faq-list">• Envíos</a></li>
                 </ul>
@@ -137,5 +189,9 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
