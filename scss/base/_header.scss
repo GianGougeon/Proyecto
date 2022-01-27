@@ -1,0 +1,253 @@
+/* Variables */
+@import "../components/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- Header --------------------- */
+#menu {
+    background: $colores-foothead;
+    color: $colores-txt;
+    height: 60px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#menu ul,
+#menu li {
+    padding: 0;
+    list-style: none
+}
+
+#menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-ul {
+    margin-top: 1.6em;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.a-diable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.header-txt {
+    display: block;
+    line-height: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $colores-txt;
+    position: relative;
+    padding: 10px;
+}
+
+.header-txt.dropdown-arrow:after {
+    content: "\25BE";
+    margin-left: 5px;
+}
+
+.header-txt:hover {
+    background-size: 100% 2px;
+    color: white;
+}
+
+.header-effect {
+    display: inline;
+    padding-bottom: 4px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.header-effect:hover {
+    background-size: 100% 2px;
+}
+
+#menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+
+#menu label:before {
+    font-size: 1.6em;
+    content: "\2261";
+    margin-left: 20px;
+}
+
+#menu ul.sub-menus {
+    height: auto;
+    overflow: hidden;
+    width: auto;
+    background: #384e77;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+#menu ul.sub-menus li {
+    display: block;
+    width: 100%;
+}
+
+#menu ul.sub-menus a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#menu li:hover ul.sub-menus {
+    display: block
+}
+
+#menu ul.sub-menus a:hover {
+    background: #F2F2F2;
+    color: #444444;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+    padding-bottom: 10px;
+    font-family: 'Yellowtail';
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8bbeb2;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding-top: 10px;
+}
+
+.logo:hover {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        position: relative;
+        transition: all 2s;
+    }
+
+    #menu ul {
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none
+    }
+
+    #menu ul.sub-menus {
+        width: 100%;
+        position: static;
+    }
+
+    #menu ul.sub-menus a {
+        padding-left: 30px;
+    }
+
+    .menu-ul {
+        margin-top: 0;
+    }
+
+    #menu li {
+        display: block;
+        float: none;
+        width: auto;
+    }
+
+    #menu input,
+    #menu label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    #menu input {
+        z-index: 4
+    }
+
+    #menu input:checked+label {
+        color: white
+    }
+
+    #menu input:checked+label:before {
+        content: "\00d7"
+    }
+
+    #menu input:checked~ul {
+        display: block
+    }
+
+    .logo {
+        height: 41px;
+        width: 60px;
+        padding-bottom: 10px;
+        font-family: 'Yellowtail';
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #8bbeb2;
+        list-style: none;
+        text-decoration: none;
+        transition: all 0.3s;
+        align-content: flex-start;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .logo:hover {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+}
+
+.divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    /* border: solid rgba(0, 0, 0, .15); */
+    /* border-width: 1px 0; */
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+.color-background {
+    background-color: rgba(0, 0, 0, .1);
+}

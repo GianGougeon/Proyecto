@@ -1,0 +1,202 @@
+@import "../components/variables";
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        width: 100%;
+        background-color: $colores-foothead;
+        flex-direction: column;
+        padding: 4% 0;
+        color: $colores-txt;
+    }
+
+    .contacto-ft {
+        padding: 100px 0px;
+    }
+
+    .ft-subline {
+        text-decoration: underline;
+    }
+
+    .ft-list {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 10px 10px
+    }
+
+    .ft-h3 {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 6%;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* siguenos seccion */
+    .siguenos-ft {
+        border-top: 1px solid #cac5c5;
+        margin: 0 40px;
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+
+    .logo-ft {
+        font-family: 'Yellowtail';
+        font-size: 400%;
+        text-align: center;
+        padding-bottom: 10px;
+        color: #8bbeb2;
+        transition: all 0.3s;
+    }
+
+    .logo-ft:hover {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .txt-decoration,
+    .contacto-ft p {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .txt-decoration:hover {
+        color: white;
+    }
+
+    .txt-decoration,
+    .ft-insta-face,
+    .contacto-ft p {
+        list-style: none;
+        text-decoration: none;
+        color: $colores-txt;
+    }
+
+    .ft-insta-face {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ft-facebook-logo {
+        padding-left: 11px;
+    }
+
+    .ft-instagram-logo {
+        padding-left: 10px;
+    }
+
+    .bi-facebook,
+    .bi-instagram {
+        color: rgb(196, 28, 78);
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s
+    }
+
+    .bi-facebook:hover,
+    .bi-instagram:hover {
+        color: white;
+    }
+
+    /* faq seccion */
+    .faq-ft {
+        border-top: 1px solid #cac5c5;
+        margin: 0 40px;
+    }
+
+    .ft-faq {
+        padding-top: 100px;
+    }
+
+    .ft-faq-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Footer pc */
+@media screen and (min-width: 601px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: $colores-foothead;
+        padding: 4% 0;
+        color: $colores-txt;
+        align-items: center;
+    }
+
+    .ft-h3 {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 6%;
+        text-align: center;
+    }
+
+    .logo-ft {
+        font-family: 'Yellowtail';
+        font-size: 400%;
+        text-align: center;
+        padding-bottom: 10%;
+        color: #8bbeb2;
+        transition: all 0.3s
+    }
+
+    .logo-ft:hover {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .txt-decoration,
+    .contacto-ft p {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .txt-decoration:hover {
+        color: white;
+    }
+
+    .txt-decoration,
+    .ft-insta-face,
+    .contacto-ft p {
+        list-style: none;
+        text-decoration: none;
+        color: $colores-txt;
+    }
+
+    .ft-insta-face {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10%;
+    }
+
+    .bi-facebook,
+    .bi-instagram {
+        color: rgb(196, 28, 78);
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s
+    }
+
+    .bi-facebook:hover,
+    .bi-instagram:hover {
+        color: white;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+}

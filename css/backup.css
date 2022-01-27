@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Estilos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Yellowtail&display=swap');
+/* ---------------------------------- INDEX HTML ---------------------------------- */
+/* ---------------------------------- INDEX HTML ---------------------------------- */
+/* ---------------------------------- INDEX HTML ---------------------------------- */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* 
+.flex-a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.nav-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--colores-txt);
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s
+}
+.nav-header:hover {
+    background-color: #384e77;
+    scale: 1.5px;
+    padding: 10px;
+}
+.logo {
+    font-family: 'Yellowtail';
+    font-size: 50px;
+    font-weight: bold;
+    color: #8bbeb2;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s
+}
+.logo:hover {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+ */
+
+
+
+/* ---------------------------------- NOSOTROS HTML ---------------------------------- */
+/* ---------------------------------- NOSOTROS HTML ---------------------------------- */
+/* ---------------------------------- NOSOTROS HTML ---------------------------------- */
+.flip-box-n {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10% 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.flip-box-n h2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.flip-box-n p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+.flip-box-back {
+    transform: rotateX(180deg);
+}
+/* Frente */
+.flip-box-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    border-radius: 15px;
+    backface-visibility: hidden;
+}
+/* Style the front side */
+.flip-box-front {
+    background-color: #384e77;
+    color: #e6f9af;
+}
+/* Style the back side */
+.flip-box-back {
+    background-color: #384e77;
+    color: #e6f9af;
+    transform: rotateY(180deg);
+}
+/* ---------------------------------- LOCAL HTML ---------------------------------- */
+/* ---------------------------------- LOCAL HTML ---------------------------------- */
+/* ---------------------------------- LOCAL HTML ---------------------------------- */
+.page-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.30em;
+    padding: 3em 3em;
+    border-bottom: 1px solid #cac5c5;
+    margin: 0 40px;
+}
+.sec-map-txt {
+    padding: 3em;
+}
+/* .box-shadow{
+    box-shadow: 0 0.1rem 0.4rem 0 rgb(50 50 50 / 50%);
+    padding-bottom: -15px;
+} */
+strong {
+    font-weight: bold;
+    font-size: 1em;
+}
+@media screen and (max-width:991px) {
+    .local-dire{
+        padding-top: 2em;
+    }
+}
+/* ---------------------------------- PANTALONES HTML ---------------------------------- */
+/* ---------------------------------- PANTALONES HTML ---------------------------------- */
+.sec-pantalones {
+    padding: 5% 0;
+    overflow: hidden;
+}
+/* Imagen  +  texto */
+.div-pantalones {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+}
+.h-pantalones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: 'Montserrat', sans-serif;
+}
+/* catalogo */
+.cat-pantalones {
+    padding-top: 1%;
+    display: grid;
+    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    color: var(--colores-txt);
+    justify-content: center;
+}
+.cat-pantalones-grid {
+    background-color: #384e77;
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+/* ---------------------------------- CAMPERAS HTML ---------------------------------- */
+/* ---------------------------------- CAMPERAS HTML ---------------------------------- */
+/* ---------------------------------- CAMPERAS HTML ---------------------------------- */
+.sec-camperas {
+    padding: 5% 0;
+    overflow: hidden;
+}
+/* Imagen  +  texto */
+.div-camperas {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+}
+.h-camperas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: 'Montserrat', sans-serif;
+}
+/* catalogo */
+.cat-camperas {
+    padding-top: 1%;
+    display: grid;
+    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    color: var(--colores-txt);
+    justify-content: center;
+}
+.cat-camperas-grid {
+    background-color: #384e77;
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+/* ---------------------------------- REMERAS HTML ---------------------------------- */
+/* ---------------------------------- REMERAS HTML ---------------------------------- */
+/* ---------------------------------- REMERAS HTML ---------------------------------- */
+.sec-remeras {
+    padding: 5% 0;
+    overflow: hidden;
+}
+/* Imagen  +  texto */
+.div-remeras {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+}
+.h-remeras {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-family: 'Montserrat', sans-serif;
+}
+/* catalogo */
+.cat-remeras {
+    padding-top: 1%;
+    display: grid;
+    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    color: var(--colores-txt);
+    justify-content: center;
+}
+.cat-remeras-grid {
+    background-color: #384e77;
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
