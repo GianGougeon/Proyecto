@@ -1,4 +1,4 @@
-/* Variables */
+// Variables
 @import "../components/variables";
 
 
@@ -15,6 +15,12 @@
     padding-left: 18px;
     display: flex;
     align-items: center;
+
+    /* borde */
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    
 }
 
 #menu ul,
@@ -150,7 +156,6 @@
     transition: all 0.3s;
     padding-top: 10px;
 }
-
 .logo:hover {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -238,14 +243,6 @@
         color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-}
-
-.divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    /* border: solid rgba(0, 0, 0, .15); */
-    /* border-width: 1px 0; */
-    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 
 .color-background {

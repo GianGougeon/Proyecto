@@ -1,17 +1,20 @@
 
-/* Estilos */
+// Estilos
 @import "components/variables";
 
 
-/* header */
+// Header 
 @import "base/header";
-/* Footer */
+// Divisor
+@import "components/divider";
+// Footer
 @import "base/footer";
-/* Views */
+// Views 
 @import "views/index";
-@import "views/camperas";
 @import "views/local";
 @import "views/nosotros";
+// tienda
+@import "views/chaquetas";
 @import "views/pantalones";
-@import "views/remeras";
+@import "views/camisetas";
 

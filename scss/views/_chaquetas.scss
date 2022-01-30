@@ -1,16 +1,18 @@
+// Variables
 @import "../components/variables";
-.sec-camperas {
+
+.sec-chaquetas {
     padding: 5% 0;
     overflow: hidden;
 }
 /* Imagen  +  texto */
-.div-camperas {
+.div-chaquetas {
     position: relative;
     text-align: center;
     color: white;
     padding-bottom: 5%;
 }
-.h-camperas {
+.h-chaquetas {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +20,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 /* catalogo */
-.cat-camperas {
+.cat-chaquetas {
     padding-top: 1%;
     display: grid;
     grid-gap: 10px;
@@ -28,7 +30,7 @@
     color: $colores-txt;
     justify-content: center;
 }
-.cat-camperas-grid {
+.cat-chaquetas-grid {
     background-color: #384e77;
     border: 0px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
