@@ -276,6 +276,7 @@
 
   .contacto-ft {
     padding: 100px 0px;
+    border-right: 1px solid grey;
   }
 
   .ft-subline {
@@ -807,6 +808,14 @@ h6 {
   border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+.t12a:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 @media screen and (min-width: 701px) {
@@ -1090,6 +1099,12 @@ strong {
   align-items: center;
 }
 
+@font-face {
+  font-family: "Tiempos Font";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .sec-remeras {
   padding: 5% 0;
   overflow: hidden;
@@ -1111,25 +1126,66 @@ strong {
   font-family: "Montserrat", sans-serif;
 }
 
-/* catalogo */
-.cat-remeras {
-  padding-top: 1%;
-  display: grid;
-  grid-gap: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  color: #e6f9af;
-  justify-content: center;
+/* tienda */
+.tienda-section-c {
+  padding: 3em 0;
 }
 
-.cat-remeras-grid {
-  background-color: #384e77;
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  align-items: center;
+/* catalogo */
+.t12c-c {
+  padding-left: 1em;
+  display: flex;
+  padding: 0.25em 0;
+}
+
+.t12c-c-style {
+  font-family: "tiempos font";
+  color: #0d0630;
+}
+
+.t12c-c-style2 {
+  font-weight: bold;
+}
+
+.t12c-c-style3 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: end;
+  color: #0d0630;
+}
+
+@media screen and (min-width: 701px) {
+  .t12b-c {
+    padding-top: 10px;
+    display: block;
+  }
+
+  /* .logo-sec-c {
+      font-family: 'Yellowtail';
+      font-size: 1.75em;
+      font-weight: bold;
+      color: $colores-foothead;
+      list-style: none;
+      text-decoration: none;
+      padding-right: .75em;
+
+  } */
+}
+@media screen and (max-width: 700px) {
+  .t12b-c {
+    padding-top: 10px;
+    display: block;
+  }
+
+  .logo-sec {
+    font-family: "Yellowtail";
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0d0630;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0.75em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

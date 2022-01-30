@@ -1,5 +1,14 @@
 // Variables
 @import "../components/variables";
+//fuente
+@font-face {
+    font-family: 'Tiempos Font';
+    src: url('../../src/fonts/tiempos/TiemposHeadline-Light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+// camisetas
 
 .sec-remeras {
     padding: 5% 0;
@@ -19,22 +28,62 @@
     transform: translate(-50%, -150%);
     font-family: 'Montserrat', sans-serif;
 }
+/* tienda */
+.tienda-section-c{
+    padding: 3em 0;
+}
 /* catalogo */
-.cat-remeras {
-    padding-top: 1%;
-    display: grid;
-    grid-gap: 10px;
+.t12c-c {
+    
+    padding-left: 1em;
     display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    color: $colores-txt;
-    justify-content: center;
+    padding: .25em 0;
+    
 }
-.cat-remeras-grid {
-    background-color: #384e77;
-    border: 0px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 25px;
-    text-align: center;
-    align-items: center;
+.t12c-c-style{
+    font-family: 'tiempos font';
+    color: $colores-foothead;
 }
+.t12c-c-style2{
+    font-weight: bold;
+}
+.t12c-c-style3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: end;
+    color: $colores-foothead;
+}
+@media screen and (min-width:701px) {
+    .t12b-c {
+        padding-top: 10px;
+        display: block;
+    }
+    /* .logo-sec-c {
+        font-family: 'Yellowtail';
+        font-size: 1.75em;
+        font-weight: bold;
+        color: $colores-foothead;
+        list-style: none;
+        text-decoration: none;
+        padding-right: .75em;
+    
+    } */
+}
+@media screen and (max-width:700px) {
+    .t12b-c {
+        padding-top: 10px;
+        display: block;
+    }
+    .logo-sec {
+
+        font-family: 'Yellowtail';
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $colores-foothead;
+        list-style: none;
+        text-decoration: none;
+        padding-left: .75em;
+    
+    }
+}
+
