@@ -1,6 +1,7 @@
 
 // Estilos
 @import "components/variables";
+@import "base/fonts";
 
 
 // Header 
@@ -17,4 +18,4 @@
 @import "views/chaquetas";
 @import "views/pantalones";
 @import "views/camisetas";
-
+@import "./components/txt-image";

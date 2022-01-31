@@ -1,0 +1,53 @@
+// Variables
+@import "../components/variables";
+
+/* Marca superior derecho */
+/* div img */
+.txt-imag-div {
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+}
+/* texto */
+@media screen and (min-width:701px) {
+    .txt-imag-txt {
+        position: absolute;
+        top: 8%;
+        left: 89%;
+        transform: translate(-50%, -150%);
+    }
+}
+@media screen and (max-width:700px) {
+    .txt-imag-txt {
+        position: absolute;
+        top: 8%;
+        left: 85%;
+        transform: translate(-50%, -150%);
+    }
+}
+
+/* Tienda index */
+@media screen and (min-width:701px) {
+    .txt-imag-txt-i {
+        position: absolute;
+        top: 10%;
+        left: 89%;
+        transform: translate(-50%, -150%);
+    }
+}
+@media screen and (max-width:700px) {
+    .txt-imag-txt-i {
+        position: absolute;
+        top: 10%;
+        left: 85%;
+        transform: translate(-50%, -150%);
+    }
+}
+@media screen and (min-width:1024) {
+    .txt-imag-txt-i {
+        position: absolute;
+        top: 10%;
+        left: 85%;
+        transform: translate(-50%, -150%);
+    }
+}

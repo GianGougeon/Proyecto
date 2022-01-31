@@ -1,0 +1,10 @@
+/* Fuentes */
+@mixin TiempoFont{
+	font-family: 'TiemposFont';
+	src: url('../../src/fonts/tiempos/TiemposHeadline-Light.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@mixin TiemposFont {
+	font-family: 'TiemposFont';
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -260,211 +261,110 @@
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 600px) {
-  footer {
-    display: flex;
-    width: 100%;
-    background-color: #0d0630;
-    flex-direction: column;
-    padding: 4% 0;
-    color: #e6f9af;
-    /* borde */
-    border: solid rgba(0, 0, 0, 0.15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-  }
-
-  .contacto-ft {
-    padding: 100px 0px;
-    border-right: 1px solid grey;
-  }
-
-  .ft-subline {
-    text-decoration: underline;
-  }
-
-  .ft-list {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 10px 10px;
-  }
-
-  .ft-h3 {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    padding-bottom: 6%;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  /* siguenos seccion */
-  .siguenos-ft {
-    border-top: 1px solid #cac5c5;
-    margin: 0 40px;
-    padding-top: 7em;
-    padding-bottom: 7em;
-  }
-
-  .logo-ft {
-    font-family: "Yellowtail";
-    font-size: 400%;
-    text-align: center;
-    padding-bottom: 10px;
-    color: #8bbeb2;
-    transition: all 0.3s;
-  }
-
-  .logo-ft:hover {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
-
-  .txt-decoration,
-.contacto-ft p {
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .txt-decoration:hover {
-    color: white;
-  }
-
-  .txt-decoration,
-.ft-insta-face,
-.contacto-ft p {
-    list-style: none;
-    text-decoration: none;
-    color: #e6f9af;
-  }
-
-  .ft-insta-face {
-    display: flex;
-    justify-content: center;
-  }
-
-  .ft-facebook-logo {
-    padding-left: 11px;
-  }
-
-  .ft-instagram-logo {
-    padding-left: 10px;
-  }
-
-  .bi-facebook,
-.bi-instagram {
-    color: #c41c4e;
-    width: 40px;
-    height: 40px;
-    transition: all 0.3s;
-  }
-
-  .bi-facebook:hover,
-.bi-instagram:hover {
-    color: white;
-  }
-
-  /* faq seccion */
-  .faq-ft {
-    border-top: 1px solid #cac5c5;
-    margin: 0 40px;
-  }
-
-  .ft-faq {
-    padding-top: 100px;
-  }
-
-  .ft-faq-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 /* Footer pc */
-@media screen and (min-width: 601px) {
-  footer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #0d0630;
-    padding: 4% 0;
-    color: #e6f9af;
-    align-items: center;
-  }
+footer {
+  background-color: #0d0630;
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
 
-  .ft-h3 {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    padding-bottom: 6%;
-    text-align: center;
-  }
+.logo-footer {
+  font-family: "Yellowtail";
+  font-size: 3em;
+  font-weight: bold;
+  color: #8bbeb2;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding-top: 0;
+}
 
-  .logo-ft {
-    font-family: "Yellowtail";
-    font-size: 400%;
-    text-align: center;
-    padding-bottom: 10%;
-    color: #8bbeb2;
-    transition: all 0.3s;
-  }
+.mt-03 {
+  padding-top: 4em;
+}
 
-  .logo-ft:hover {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
+.footer-copy-pad {
+  padding-top: 4em;
+}
 
-  .txt-decoration,
-.contacto-ft p {
-    font-family: "Montserrat", sans-serif;
-  }
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #afbef03a;
+  padding-top: 2em;
+  width: 90%;
+}
 
-  .txt-decoration:hover {
-    color: white;
-  }
+.social-color {
+  fill: #384e77;
+}
+.social-color:hover {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
-  .txt-decoration,
-.ft-insta-face,
-.contacto-ft p {
-    list-style: none;
-    text-decoration: none;
-    color: #e6f9af;
-  }
+.social-color-2:hover {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
-  .ft-insta-face {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10%;
-  }
+.text-reset {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-  .bi-facebook,
-.bi-instagram {
-    color: #c41c4e;
-    width: 40px;
-    height: 40px;
-    transition: all 0.3s;
-  }
+.text-footer-color {
+  color: #8bbeb2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-  .bi-facebook:hover,
-.bi-instagram:hover {
-    color: white;
-  }
+.text-decoration-none {
+  list-style: none;
+}
 
-  .h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    line-height: 1.2;
+/* Contacto */
+@media (min-width: 768px) {
+  .footer-contact {
+    width: 200px;
   }
 }
+.footer-contact-txt {
+  padding-left: 1em;
+}
+
+@media (min-width: 577px) {
+  .faq-footer {
+    padding-top: 3em;
+    width: 175px;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .col- {
+    text-align: center;
+  }
+
+  .faq-footer {
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-sm-line {
+    border-bottom: 1px solid rgba(128, 125, 125, 0.342);
+    width: 80%;
+    padding: 4% 0;
+  }
+}
+.fa-home:before {
+  content: "\f015";
+}
+
+/* Fuentes */
 /*  --------------------- Marca PRINCIPAL --------------------- */
 .intro-div {
   position: relative;
@@ -516,7 +416,7 @@ h6 {
   box-sizing: border-box;
 }
 
-*,
+.tienda-section,
 :after,
 :before {
   box-sizing: inherit;
@@ -733,6 +633,7 @@ h6 {
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
   color: black;
+  font-weight: bold;
 }
 
 .t6ahover:hover {
@@ -826,14 +727,13 @@ h6 {
     align-items: center;
   }
 
-  .logo-sec {
+  .logo-sec-tienda {
     font-family: "Yellowtail";
-    font-size: 1.75em;
+    font-size: 1.35em;
     font-weight: bold;
     color: #0d0630;
     list-style: none;
     text-decoration: none;
-    padding-right: 0.75em;
   }
 }
 @media screen and (max-width: 700px) {
@@ -843,14 +743,13 @@ h6 {
     left: 50%;
   }
 
-  .logo-sec {
+  .logo-sec-tienda {
     font-family: "Yellowtail";
     font-size: 1.1em;
     font-weight: bold;
     color: #0d0630;
     list-style: none;
     text-decoration: none;
-    padding-left: 0.75em;
   }
 }
 .t12c {
@@ -908,6 +807,7 @@ h6 {
   padding-bottom: 10%;
 }
 
+/* Fuentes */
 .page-title {
   display: flex;
   justify-content: center;
@@ -936,6 +836,7 @@ strong {
     padding-top: 2em;
   }
 }
+/* Fuentes */
 .flip-box-n {
   display: flex;
   justify-content: center;
@@ -1015,6 +916,7 @@ strong {
   transform: rotateY(180deg);
 }
 
+/* Fuentes */
 .sec-chaquetas {
   padding: 5% 0;
   overflow: hidden;
@@ -1057,6 +959,7 @@ strong {
   align-items: center;
 }
 
+/* Fuentes */
 .sec-pantalones {
   padding: 5% 0;
   overflow: hidden;
@@ -1099,18 +1002,13 @@ strong {
   align-items: center;
 }
 
-@font-face {
-  font-family: "Tiempos Font";
-  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+/* Fuentes */
+/* Imagen  +  texto */
 .sec-remeras {
   padding: 5% 0;
   overflow: hidden;
 }
 
-/* Imagen  +  texto */
 .div-remeras {
   position: relative;
   text-align: center;
@@ -1139,7 +1037,7 @@ strong {
 }
 
 .t12c-c-style {
-  font-family: "tiempos font";
+  font-family: "TiemposFont";
   color: #0d0630;
 }
 
@@ -1185,6 +1083,56 @@ strong {
     list-style: none;
     text-decoration: none;
     padding-left: 0.75em;
+  }
+}
+/* Marca superior derecho */
+/* div img */
+.txt-imag-div {
+  text-align: center;
+  color: white;
+  padding-bottom: 5%;
+}
+
+/* texto */
+@media screen and (min-width: 701px) {
+  .txt-imag-txt {
+    position: absolute;
+    top: 8%;
+    left: 89%;
+    transform: translate(-50%, -150%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .txt-imag-txt {
+    position: absolute;
+    top: 8%;
+    left: 85%;
+    transform: translate(-50%, -150%);
+  }
+}
+/* Tienda index */
+@media screen and (min-width: 701px) {
+  .txt-imag-txt-i {
+    position: absolute;
+    top: 10%;
+    left: 89%;
+    transform: translate(-50%, -150%);
+  }
+}
+@media screen and (max-width: 700px) {
+  .txt-imag-txt-i {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%, -150%);
+  }
+}
+@media screen and (min-width: 1024) {
+  .txt-imag-txt-i {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%, -150%);
   }
 }
 

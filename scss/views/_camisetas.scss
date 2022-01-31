@@ -1,20 +1,15 @@
 // Variables
 @import "../components/variables";
-//fuente
-@font-face {
-    font-family: 'Tiempos Font';
-    src: url('../../src/fonts/tiempos/TiemposHeadline-Light.otf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
+@import "../base/fonts";
 
-// camisetas
+// Camisetas
 
+/* Imagen  +  texto */
 .sec-remeras {
     padding: 5% 0;
     overflow: hidden;
 }
-/* Imagen  +  texto */
+
 .div-remeras {
     position: relative;
     text-align: center;
@@ -41,7 +36,7 @@
     
 }
 .t12c-c-style{
-    font-family: 'tiempos font';
+    @include TiemposFont;
     color: $colores-foothead;
 }
 .t12c-c-style2{
