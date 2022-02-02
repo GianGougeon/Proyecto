@@ -9,6 +9,7 @@
     color: #0d0630;
     border: solid rgba(0, 0, 0, .15);
     border-width: 0px 0;
+    -webkit-box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 20%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 20%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 
 }
@@ -17,12 +18,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-family: 'Yellowtail';
     font-size: 8vw;
     cursor: default;
     font-weight: bold;
-        
+
 }
 
 /* --------------------- Ofertas --------------------- */
@@ -31,13 +34,19 @@
 }
 
 .off-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 10% 0px;
 
     width: 100%;
     height: 140%;
     --translateY: -10.8328px;
+    -webkit-transform: translateY(var(--translateY));
+    -ms-transform: translateY(var(--translateY));
     transform: translateY(var(--translateY));
 }
 
@@ -49,7 +58,7 @@
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    
+
     text-transform: uppercase;
     color: white;
 }
@@ -61,12 +70,14 @@
 /* --------------------- Tienda -------------------- */
 
 .tienda-section {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
 
 .tienda-section,
 :after,
 :before {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit
 }
 
@@ -120,9 +131,12 @@
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -134,6 +148,7 @@
     }
 
     .e134s7:hover {
+        -webkit-box-shadow: inset 0 0 0 2px #a2a3a8;
         box-shadow: inset 0 0 0 2px #a2a3a8
     }
 }
@@ -149,6 +164,7 @@
 
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
+    -webkit-box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 
 }
@@ -163,6 +179,8 @@
     height: 0;
     left: 0;
     position: absolute;
+    -webkit-transition: border .15s ease-in-out;
+    -o-transition: border .15s ease-in-out;
     transition: border .15s ease-in-out;
     width: 100%
 }
@@ -176,7 +194,7 @@
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 400;
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
@@ -193,7 +211,7 @@
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 700;
-    
+
     color: #1a1a1a
 }
 
@@ -217,7 +235,7 @@
 
 .u-font-tw {
     font-weight: 700;
-    
+
     color: #1a1a1a;
 }
 
@@ -250,8 +268,11 @@
 
 
 .div-tienda-b {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
 }
@@ -259,6 +280,7 @@
 
 .t2b {
     margin-top: 24px;
+    -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
     display: none;
@@ -267,6 +289,8 @@
 @media screen and (min-width:1024px) {
     .t2b {
         margin-top: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 16px;
     }
@@ -276,6 +300,8 @@
 .t3b {
     font-weight: bold;
     padding-bottom: 12px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 0;
     margin-top: 0;
@@ -308,7 +334,7 @@
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
     margin-top: 0;
-    
+
     color: black;
     font-weight: bold;
 
@@ -324,6 +350,7 @@
 .t6a {
     padding-left: 6px;
     padding-right: 6px;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
 }
@@ -331,6 +358,7 @@
 @media screen and (min-width:1024px) {
 
     .t6a {
+        -ms-flex-preferred-size: 75%;
         flex-basis: 75%;
         max-width: 75%
     }
@@ -338,7 +366,10 @@
 
 
 .t7a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -347,6 +378,7 @@
 .t8a {
     padding-left: 6px;
     padding-right: 6px;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
     position: relative;
@@ -355,6 +387,7 @@
 
 @media screen and (min-width:768px) {
     .t8a {
+        -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
         max-width: 33.33333%
     }
@@ -362,6 +395,7 @@
 
 @media screen and (min-width:480px) {
     .t8a {
+        -ms-flex-preferred-size: 33.33333%;
         flex-basis: 33.33333%;
         max-width: 33.33333%
     }
@@ -371,9 +405,14 @@
 
 
 .t9a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -400,17 +439,22 @@
     width: 100%;
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
+    -webkit-box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
     transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 
-    &:hover{
+    &:hover {
         transform: scale(1.05);
         -webkit-transform: scale(1.05);
         -moz-transform: scale(1.05);
         -ms-transform: scale(1.05);
         -o-transform: scale(1.05);
-        
-}
+
+    }
 
 }
 
@@ -418,10 +462,17 @@
 @media screen and (min-width:701px) {
     .t12b {
         padding-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
+
     .logo-sec-tienda {
         font-family: 'Yellowtail';
         font-size: 1.35em;
@@ -429,15 +480,17 @@
         color: $colores-foothead;
         list-style: none;
         text-decoration: none;
-    
+
     }
 }
+
 @media screen and (max-width:700px) {
     .t12b {
         padding-top: 10px;
         display: block;
         left: 50%;
     }
+
     .logo-sec-tienda {
 
         font-family: 'Yellowtail';
@@ -446,7 +499,7 @@
         color: $colores-foothead;
         list-style: none;
         text-decoration: none;
-    
+
     }
 }
 
@@ -454,7 +507,11 @@
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -478,23 +535,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
-}
 
-/* grid de tienda-nuevo */
-.tienda-n {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
+/* tienda nuevo */
+
 
 .grid-new {
     background-color: $colores-g;
     border: 0px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     font-size: 25px;
     text-align: center;

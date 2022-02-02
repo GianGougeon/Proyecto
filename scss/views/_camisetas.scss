@@ -4,6 +4,7 @@
 
 // Camisetas
 
+
 /* Imagen  +  texto */
 .sec-remeras {
     padding: 5% 0;
@@ -16,43 +17,59 @@
     color: white;
     padding-bottom: 5%;
 }
+
 .h-remeras {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
     transform: translate(-50%, -150%);
     font-family: $Montserrat;
 }
+
 /* tienda */
-.tienda-section-c{
+.tienda-section-c {
     padding: 3em 0;
 }
+
 /* catalogo */
 .t12c-c {
-    
+
     padding-left: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: .25em 0;
-    
+
 }
-.t12c-c-style{
+
+.t12c-c-style {
     font-family: $TiemposFont;
     color: $colores-foothead;
 }
-.t12c-c-style2{
+
+.t12c-c-style2 {
     font-weight: bold;
 }
-.t12c-c-style3{
+
+.t12c-c-style3 {
     font-family: Arial, Helvetica, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
     color: $colores-foothead;
 }
+
 @media screen and (min-width:701px) {
     .t12b-c {
         padding-top: 10px;
         display: block;
     }
+
     /* .logo-sec-c {
         font-family: 'Yellowtail';
         font-size: 1.75em;
@@ -64,11 +81,13 @@
     
     } */
 }
+
 @media screen and (max-width:700px) {
     .t12b-c {
         padding-top: 10px;
         display: block;
     }
+
     .logo-sec {
 
         font-family: 'Yellowtail';
@@ -78,7 +97,6 @@
         list-style: none;
         text-decoration: none;
         padding-left: .75em;
-    
+
     }
 }
-
