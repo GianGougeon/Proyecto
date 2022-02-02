@@ -7,21 +7,21 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 10% 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $Montserrat;
 }
 .flip-box-n h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $Montserrat;
 }
 .flip-box-n p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 15%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $Montserrat;
 }
 .flip-box {
     background-color: transparent;

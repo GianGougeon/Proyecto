@@ -1,5 +1,49 @@
 @charset "UTF-8";
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +90,6 @@ header {
 
 /* texto */
 .txt-header {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #8bbeb2;
@@ -78,7 +121,16 @@ header {
 
 .fill-icon-navbar {
   fill: #8bbeb2;
-  width: 2em;
+  width: 25px;
+}
+
+.fill-icon-navbar-2 {
+  width: 35px;
+  fill: #8bbeb2;
+}
+.fill-icon-navbar-2:hover:hover {
+  fill: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .navbar-pad {
@@ -92,11 +144,6 @@ header {
 
 .navbar-pad-ul {
   padding-left: 2em;
-}
-
-.fill-icon-navbar {
-  fill: #8bbeb2;
-  width: 50px;
 }
 
 .icon-nav {
@@ -165,6 +212,21 @@ header {
     -webkit-box-shadow: -1px 12px 12px 1px rgba(53, 146, 214, 0.46);
     -moz-box-shadow: -1px 12px 12px 1px rgba(53, 146, 214, 0.46);
  */
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 /* Footer pc */
 footer {
   background-color: #0d0630;
@@ -280,6 +342,35 @@ footer {
 }
 
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 /*  --------------------- Marca PRINCIPAL --------------------- */
 .intro-div {
   position: relative;
@@ -310,6 +401,10 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10% 0px;
+  width: 100%;
+  height: 140%;
+  --translateY: -10.8328px;
+  transform: translateY(var(--translateY));
 }
 
 .img-nuevo {
@@ -320,7 +415,6 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
 }
@@ -434,7 +528,6 @@ footer {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0;
@@ -448,7 +541,6 @@ footer {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   color: #1a1a1a;
 }
 
@@ -471,7 +563,6 @@ footer {
 
 .u-font-tw {
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   color: #1a1a1a;
 }
 
@@ -549,7 +640,6 @@ footer {
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Montserrat", sans-serif;
   color: black;
   font-weight: bold;
 }
@@ -697,7 +787,6 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Montserrat", sans-serif;
 }
 
 /* grid de tienda-nuevo */
@@ -726,10 +815,24 @@ footer {
 }
 
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 .page-title {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 1.3em;
   padding: 3em 3em;
   border-bottom: 1px solid #cac5c5;
@@ -755,12 +858,41 @@ strong {
   }
 }
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 .flip-box-n {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 10% 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 .flip-box-n h2 {
@@ -768,7 +900,7 @@ strong {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 5%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 .flip-box-n p {
@@ -776,7 +908,7 @@ strong {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 15%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 .flip-box {
@@ -835,6 +967,35 @@ strong {
 }
 
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 .sec-chaquetas {
   padding: 5% 0;
   overflow: hidden;
@@ -853,7 +1014,7 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -150%);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 /* catalogo */
@@ -878,6 +1039,35 @@ strong {
 }
 
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 .sec-pantalones {
   padding: 5% 0;
   overflow: hidden;
@@ -896,7 +1086,7 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -150%);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 /* catalogo */
@@ -921,6 +1111,35 @@ strong {
 }
 
 /* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 /* Imagen  +  texto */
 .sec-remeras {
   padding: 5% 0;
@@ -939,7 +1158,7 @@ strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -150%);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 /* tienda */
@@ -1002,6 +1221,21 @@ strong {
     text-decoration: none;
     padding-left: 0.75em;
   }
+}
+/* Fuentes */
+@font-face {
+  font-family: "TiemposFont";
+  src: url("../../src/fonts/tiempos/TiemposHeadline-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aXpsog.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* Marca superior derecho */
 /* div img */

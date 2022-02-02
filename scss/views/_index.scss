@@ -21,7 +21,8 @@
     font-family: 'Yellowtail';
     font-size: 8vw;
     cursor: default;
-    font-weight: bold
+    font-weight: bold;
+        
 }
 
 /* --------------------- Ofertas --------------------- */
@@ -33,6 +34,11 @@
     display: flex;
     justify-content: center;
     padding: 10% 0px;
+
+    width: 100%;
+    height: 140%;
+    --translateY: -10.8328px;
+    transform: translateY(var(--translateY));
 }
 
 .img-nuevo {
@@ -43,7 +49,7 @@
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
+    
     text-transform: uppercase;
     color: white;
 }
@@ -170,7 +176,7 @@
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
@@ -187,7 +193,7 @@
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    
     color: #1a1a1a
 }
 
@@ -211,7 +217,7 @@
 
 .u-font-tw {
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    
     color: #1a1a1a;
 }
 
@@ -302,7 +308,7 @@
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
+    
     color: black;
     font-weight: bold;
 
@@ -473,7 +479,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 /* grid de tienda-nuevo */

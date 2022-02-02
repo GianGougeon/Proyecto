@@ -15,43 +15,111 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <nav id='menu'>
-            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-            <ul class="menu-ul">
-                <div>
-                    <li>
-                        <a class="logo" href='../../index.html'>Ge</a>
-                    </li>
-                </div>
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- logo -->
+            <ul id="user-navbar">
                 <li>
-                    <a class='dropdown-arrow a-diable header-txt'>
-                        <p class="header-effect">Tienda</p>
-                    </a>
-                    <ul class='sub-menus'>
-                        <!-- <li><a class="header-txt" href='index.html#tienda'>Coleccion</a></li> -->
-                        <li><a class="header-txt" href='./remeras.html'>Remeras</a></li>
-                        <li><a class="header-txt" href='./pantalones.html'>Pantalones</a></li>
-                        <li><a class="header-txt" href='./camperas.html'>Camperas</a></li>
-                    </ul>
+                    <a href="../../index.html" class="logo">GenGe</a>
                 </li>
-                <li>
-                    <a class="header-txt" href='../../index.html#nuevo'>
-                        <p class="header-effect">Nuevo</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="header-txt" href='./local.html'>
-                        <p class="header-effect">Nuestro Local</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="header-txt" href='./nosotros.html'>
-                        <p class="header-effect">Nosotros</p>
+                <li id="disable">
+                    <a href="../../index.html" class=" nav-item nav-link">
+                        <span class="navbar-pad">
+                            <!-- user icon mobile -->
+                            <svg class="fill-icon-navbar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" width="30px"
+                                >
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g class="fill-icon-navbar">
+                                        <path
+                                            d="M83.49097,0.03149c-47.06394,1.26982 -84.35819,40.14728 -83.67135,87.22333c0.68684,47.07605 39.09943,84.84894 86.18038,84.74518c47.47316,-0.05627 85.94373,-38.52684 86,-86c0.00138,-23.2446 -9.40665,-45.49984 -26.08063,-61.69522c-16.67398,-16.19537 -39.1937,-24.95145 -62.42841,-24.27329zM86,10.75c28.25359,-0.04858 54.14504,15.75997 67.01033,40.91454c12.86529,25.15456 10.5284,55.40049 -6.04817,78.28029c-16.83408,-14.78286 -38.56114,-22.78225 -60.96216,-22.44482c-22.40102,-0.33743 -44.12808,7.66196 -60.96216,22.44482c-16.57657,-22.8798 -18.91347,-53.12572 -6.04817,-78.28029c12.86529,-25.15456 38.75674,-40.96312 67.01033,-40.91454zM87.56421,21.53149c-10.24147,-0.42614 -20.21346,3.34462 -27.61057,10.44054c-7.39711,7.09591 -11.57892,16.90264 -11.57864,27.15297c0.0237,20.76989 16.85511,37.6013 37.625,37.625c20.48468,0.01376 37.21625,-16.36247 37.64215,-36.84273c0.4259,-20.48025 -15.61039,-37.53792 -36.07793,-38.37578zM86,32.25c14.84265,0 26.875,12.03235 26.875,26.875c0,14.84265 -12.03235,26.875 -26.875,26.875c-14.84265,0 -26.875,-12.03235 -26.875,-26.875c0.01777,-14.83529 12.03971,-26.85723 26.875,-26.875zM86,118.25c19.88957,-0.36925 39.18992,6.75877 54.06494,19.96729c-14.1373,14.71366 -33.66016,23.03078 -54.06494,23.03271c-20.40478,-0.00193 -39.92764,-8.31905 -54.06494,-23.03271c14.87502,-13.20852 34.17538,-20.33653 54.06494,-19.96729z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
                     </a>
                 </li>
             </ul>
-        </nav>
+            <button type="button" id="navbar-color" class="navbar-light navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <!-- icono hamburger -->
+                <span class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
+                        style=" fill:#8bbeb2;">
+                        <g stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#8bbeb2">
+                                <path
+                                    d="M168.41667,32.25h-164.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333c0,1.978 1.60533,3.58333 3.58333,3.58333h164.83333c1.978,0 3.58333,-1.60533 3.58333,-3.58333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333zM168.41667,82.41667h-164.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333c0,1.978 1.60533,3.58333 3.58333,3.58333h164.83333c1.978,0 3.58333,-1.60533 3.58333,-3.58333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333zM168.41667,132.58333h-164.83333c-1.978,0 -3.58333,1.60533 -3.58333,3.58333c0,1.978 1.60533,3.58333 3.58333,3.58333h164.83333c1.978,0 3.58333,-1.60533 3.58333,-3.58333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-border navbar-pad-ul">
+                    <li id="navbar-pad-li">
+                        <a href="../../index.html#tienda" class="txt-header nav-item nav-link">
+                            <span class="header-effect txt-header">
+                                Tienda
+                            </span>
+                        </a>
+                    </li>
+                    <li id="navbar-pad-li">
+                        <a href="../../index.html#nuevo" class="navbar-pad-li txt-header nav-item nav-link">
+                            <span class="txt-header header-effect">
+                                Nuevo
+                            </span>
+                        </a>
+                    </li>
+                    <li id="navbar-pad-li">
+                        <a href="../../src/views/local.html" class="txt-header nav-item nav-link">
+                            <span class="txt-header header-effect">
+                                Nuestro local
+                            </span>
+                        </a>
+                    </li>
+                    <li id="navbar-pad-li">
+                        <a href="../../src/views/nosotros.html" class="txt-header nav-item nav-link"><span
+                                class="txt-header header-effect">
+                                Nosotros
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="navbar-nav ms-auto icon-nav">
+                    <!-- perfil -->
+                    <li id="disable2">
+                        <a href="../../index.html" class=" nav-item nav-link">
+                            <span class="navbar-pad">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172" width="35px" height="35px"
+                                    style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g class="fill-icon-navbar">
+                                            <path
+                                                d="M83.49097,0.03149c-47.06394,1.26982 -84.35819,40.14728 -83.67135,87.22333c0.68684,47.07605 39.09943,84.84894 86.18038,84.74518c47.47316,-0.05627 85.94373,-38.52684 86,-86c0.00138,-23.2446 -9.40665,-45.49984 -26.08063,-61.69522c-16.67398,-16.19537 -39.1937,-24.95145 -62.42841,-24.27329zM86,10.75c28.25359,-0.04858 54.14504,15.75997 67.01033,40.91454c12.86529,25.15456 10.5284,55.40049 -6.04817,78.28029c-16.83408,-14.78286 -38.56114,-22.78225 -60.96216,-22.44482c-22.40102,-0.33743 -44.12808,7.66196 -60.96216,22.44482c-16.57657,-22.8798 -18.91347,-53.12572 -6.04817,-78.28029c12.86529,-25.15456 38.75674,-40.96312 67.01033,-40.91454zM87.56421,21.53149c-10.24147,-0.42614 -20.21346,3.34462 -27.61057,10.44054c-7.39711,7.09591 -11.57892,16.90264 -11.57864,27.15297c0.0237,20.76989 16.85511,37.6013 37.625,37.625c20.48468,0.01376 37.21625,-16.36247 37.64215,-36.84273c0.4259,-20.48025 -15.61039,-37.53792 -36.07793,-38.37578zM86,32.25c14.84265,0 26.875,12.03235 26.875,26.875c0,14.84265 -12.03235,26.875 -26.875,26.875c-14.84265,0 -26.875,-12.03235 -26.875,-26.875c0.01777,-14.83529 12.03971,-26.85723 26.875,-26.875zM86,118.25c19.88957,-0.36925 39.18992,6.75877 54.06494,19.96729c-14.1373,14.71366 -33.66016,23.03078 -54.06494,23.03271c-20.40478,-0.00193 -39.92764,-8.31905 -54.06494,-23.03271c14.87502,-13.20852 34.17538,-20.33653 54.06494,-19.96729z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
     </header>
 <!-- divisor -->
 <div class="divider"></div>
@@ -104,65 +172,133 @@
 <!-- divisor -->
 <div class="divider"></div>
     <!-- Pie de Pagina -->
-    <footer>
+    <footer class="mt-03">
+        <section class="text-muted">
+            <div class="container">
+                <!-- grid fila -->
+                <div class="row ">
+                    <!-- grid columna -->
+                    <div class="col- col-sm-6 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-sm-line">
+                        <!-- Content -->
+                        <a class="text-decoration-none" href="../../index.html">
+                            <h6 class="mb-4">
+                                <i class="logo-footer">Genge</i>
+                            </h6>
+                            <ul class="text-decoration-none faq-footer">
+                                <li class="text-decoration-none">
+                                    <a href="./nosotros.html"
+                                        class="text-whitehover text-decoration-none text-decoration-none ft-list ft-faq-list">•
+                                        Quienes somos</a>
+                                </li>
+                                <li><a href="./local.html"
+                                        class="text-whitehover text-decoration-none text-decoration-none ft-list ft-faq-list">•
+                                        Nuestro local</a>
+                                </li>
+                                <li><a href="./nosotros.html"
+                                        class="text-whitehover text-decoration-none text-decoration-none ft-list ft-faq-list">•
+                                        Envíos</a></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <!-- grid columna -->
+                    <div class="col- col-sm-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-sm-line">
+                        <!-- Links -->
+                        <h6 class="text-footer-color mb-4">
+                            Redes
+                        </h6>
+                        <div class="social-color">
+                            <li class="text-decoration-none">
+                                <a class="social-color social-color-2" href="https://instagram.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
 
-        <!-- Contacto -->
+                        <div>
+                            <li class="text-decoration-none">
+                                <a class="social-color-2 social-color" href="https://www.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="48"
+                                        viewBox="0 0 30 30">
+                                        <path
+                                            d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z">
+                                        </path>
+                                    </svg>
 
-        <div class="contacto-ft">
-            <h3 class="ft-h3 ft-subline">Contacto:</h3>
-            <p class="ft-list">
-                Direccion: Mercedes 1802 - Montevideo
-            </p>
-            <p class="ft-list">
-                Whatsapp: (+598) 99 999 999
-            </p>
-            <p class="ft-list">
-                Horarios: 8:00hs a 18:00hs
-            </p>
-        </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="text-decoration-none">
+                                <a class="social-color-2 social-color" href="https://www.twitter.com/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                        viewBox="0 0 30 30">
+                                        <path
+                                            d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <!-- grid columna -->
+                    <div class="col- col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footer-sm-line">
+                        <!-- Links -->
+                        <h6 class="text-footer-color mb-4">
+                            Tienda
+                        </h6>
+                        <p>
+                            <a class="text-whitehover text-decoration-none"
+                                href="./camisetas.html"><span>Camisetas</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="./chaquetas.html"
+                                class="text-whitehover text-decoration-none"><span>Chaquetas</span></a>
+                        </p>
+                        <p>
+                            <a href="./pantalones.html"
+                                class="text-whitehover text-decoration-none"><span>Pantalones</span></a>
+                        </p>
+                    </div>
+                    <!-- grid columna -->
+                    <div class="col- col-sm-6 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer-contact">
+                        <!-- Links -->
 
+                        <h6 class="text-footer-color mb-4">
+                            Contacto
+                        </h6>
+                        <div class="footer-contact-txt">
+                            <p>
+                                Montevideo - Mercedes 1802
+                            </p>
+                            <p>
+                                GengeTienda@email.com
+                            </p>
+                            <p>
+                                (+598) 99 999 999
+                            </p>
+                        </div>
+                    </div>
 
-        <!-- Seccion y Siguenos/logo -->
-        <div class="siguenos-ft">
-            <a href="../../index.html" class="txt-decoration">
-                <h1 class="logo-ft">Ge</h1>
-            </a>
-            <h3 class="ft-h3 ft-subline">SIGUENOS EN:</h3>
-
-            <div class="ft-insta-face">
-                <li class="ft-facebook-logo">
-                    <a href="https://facebook.com" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi-facebook" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="ft-instagram-logo" href="https://instagram.com" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi-instagram" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                        </svg>
-                    </a>
-                </li>
+                </div>
+                <!-- grid columna -->
             </div>
-        </div>
-        <!-- FAQ -->
-        <div class="faq-ft">
-            <h3 class="ft-h3 ft-subline ft-faq">FAQ:</h3>
-            <nav>
-                <ul class="txt-decoration">
-                    <li><a href="./nosotros.html" class="txt-decoration ft-list ft-faq-list">• Quienes somos</a>
-                    </li>
-                    <li><a href="./local.html" class="txt-decoration ft-list ft-faq-list">• Nuestro local</a></li>
-                    <li><a href="./nosotros.html" class="txt-decoration ft-list ft-faq-list">• Envíos</a></li>
-                </ul>
-            </nav>
-        </div>
-
+            <!-- grid fila -->
+            <div class="footer-copy-pad">
+                <div class="container footer-copy">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12 col_1 ">
+                            Copyright © 2022 <span>GenGe.</span> Todos los derechos reservados.</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

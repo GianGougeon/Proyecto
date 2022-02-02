@@ -28,7 +28,6 @@ header {
 
 #disable2 {
     display: inline;
-
 }
 /* logo */
 .logo {
@@ -48,7 +47,6 @@ header {
 }
 /* texto */
 .txt-header {
-    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: $colores-txt2;
@@ -79,13 +77,21 @@ header {
     border: 4px solid #afbef03a;
 
 }
-
 .fill-icon-navbar {
     fill: $colores-txt2;
-    width: 2em;
+    width: 25px;
 
 }
-
+.fill-icon-navbar-2{
+    width: 35px;
+    fill: $colores-txt2;
+    &:hover{
+        &:hover {
+            fill: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+    }
+}
 .navbar-pad {
     padding-left: 2em
 }
@@ -97,12 +103,6 @@ header {
 
 .navbar-pad-ul {
     padding-left: 2em;
-}
-
-.fill-icon-navbar {
-    fill: $colores-txt2;
-    width: 50px;
-
 }
 
 .icon-nav {
@@ -118,7 +118,6 @@ header {
         display: flex;
         justify-content: end;
     }
-
     .navbar-nav-border {
         border-top: 1px solid #afbef03a;
         padding-top: 1em;

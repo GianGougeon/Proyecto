@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -150%);
-    font-family: 'Montserrat', sans-serif;
+    font-family: $Montserrat;
 }
 /* tienda */
 .tienda-section-c{
@@ -36,7 +36,7 @@
     
 }
 .t12c-c-style{
-    @include TiemposFont;
+    font-family: $TiemposFont;
     color: $colores-foothead;
 }
 .t12c-c-style2{
