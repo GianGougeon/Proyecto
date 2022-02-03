@@ -15,12 +15,9 @@ footer {
 }
 
 .logo-footer {
-    font-family: "Yellowtail";
+    @include logo;
     font-size: 3em;
-    font-weight: bold;
-    color: #8bbeb2;
-    list-style: none;
-    text-decoration: none;
+    color: $colores-txt2;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;

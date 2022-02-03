@@ -1,6 +1,5 @@
 // Variables
 @import "../components/variables";
-@import "../base/fonts";
 
 // Camisetas
 
@@ -50,18 +49,18 @@
 }
 
 .t12c-c-style2 {
-    font-weight: bold;
+    text-decoration: none;
 }
 
 .t12c-c-style3 {
-    font-family: Arial, Helvetica, sans-serif;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-    color: $colores-foothead;
+    color: red;
 }
 
 @media screen and (min-width:701px) {
@@ -70,16 +69,6 @@
         display: block;
     }
 
-    /* .logo-sec-c {
-        font-family: 'Yellowtail';
-        font-size: 1.75em;
-        font-weight: bold;
-        color: $colores-foothead;
-        list-style: none;
-        text-decoration: none;
-        padding-right: .75em;
-    
-    } */
 }
 
 @media screen and (max-width:700px) {
@@ -89,14 +78,10 @@
     }
 
     .logo-sec {
-
-        font-family: 'Yellowtail';
-        font-size: 1.1em;
-        font-weight: bold;
+        @include logo;
         color: $colores-foothead;
-        list-style: none;
-        text-decoration: none;
         padding-left: .75em;
+        font-size: 1.1em;
 
     }
 }

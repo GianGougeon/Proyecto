@@ -1,18 +1,14 @@
 // Variables
 @import "../components/variables";
+@import "../components/mixin";
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@include deafult;
 
 
 /* --------------------- Header --------------------- */
 header {
     background-color: $colores-foothead;
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
     display: inline-block
 }
 
@@ -35,12 +31,11 @@ header {
 
 /* logo */
 .logo {
+
+    @include logo;
     padding: 0 1em 0 1em;
-    font-family: 'Yellowtail';
     font-size: 2em;
-    font-weight: bold;
-    color: #8bbeb2;
-    text-decoration: none;
+    color: $colores-txt2;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;

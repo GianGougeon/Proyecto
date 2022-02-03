@@ -1,5 +1,4 @@
-//fuentes
-@import '../base/fonts';
+
 //variables
 
 
@@ -11,7 +10,10 @@ $colores-txt: #e6f9af;
 $colores-txt2: #8bbeb2;
 // Color footer/header
 $colores-foothead: #0d0630;
-
+// color fondo general gris
+$colores-fondo-general: #ececec;
+// color texto negro no tan fuerte
+$colores-txt-black: #3c3a3a;
 
 
 //fuentes
@@ -19,4 +21,4 @@ $colores-foothead: #0d0630;
 // Montserrat
 $Montserrat: "Montserrat";
 // TiemposFont
-$TiemposFont: 'TiemposFont';
+$TiemposFont: "TiemposFont";
