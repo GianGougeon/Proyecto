@@ -3,7 +3,9 @@
 @import "../components/mixin";
 
 
-@include deafult;
+body{
+    background-color: $colores-fondo-general;
+}
 
 
 /* --------------------- Header --------------------- */

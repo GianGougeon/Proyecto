@@ -1,0 +1,284 @@
+@import "../components/variables";
+
+
+.destacado {
+    padding: 5em 0;
+    background-color: $colores-fondo-general;
+}
+
+.destacado-row {
+    justify-content: center;
+
+}
+
+.destacado-div {
+    display: flex;
+}
+
+.destacado-div-2 {
+    display: block;
+}
+
+.destacado-img {
+
+
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+
+    &:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+/* outfit semanal */
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/* gorras */
+
+#container-destacado {
+    width: 452px;
+    height: 268px;
+    margin: 5em auto;
+    overflow: hidden;
+
+
+
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+}
+
+.box {
+
+
+    width: 452px;
+    height: 268px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .destacado-img-2 {
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        width: 452px;
+        height: 268px;
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            /* Safari and Chrome */
+            -moz-transform: scale(1.1);
+            /* Firefox */
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -o-transform: scale(1.1);
+            /* Opera */
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+    #container-destacado {
+        width: 315px;
+        height: 197px;
+        margin: 5em auto;
+        overflow: hidden;
+
+
+
+
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+    }
+
+    .box {
+
+
+        width: 315px;
+        height: 197px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .destacado-img-2 {
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            width: 315px;
+            height: 197px;
+
+            &:hover {
+                -webkit-transform: scale(1.1);
+                /* Safari and Chrome */
+                -moz-transform: scale(1.1);
+                /* Firefox */
+                -ms-transform: scale(1.1);
+                /* IE 9 */
+                -o-transform: scale(1.1);
+                /* Opera */
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////
+/* mochilas */
+#container-destacado-2 {
+    width: 436px;
+    height: 629px;
+    margin: auto;
+    overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+}
+
+.box2 {
+
+
+    width: 436px;
+    height: 629px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .destacado-img-2b {
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        width: 436px;
+        height: 629px;
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            /* Safari and Chrome */
+            -moz-transform: scale(1.1);
+            /* Firefox */
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -o-transform: scale(1.1);
+            /* Opera */
+            transform: scale(1.1);
+        }
+    }
+}
+
+.destacado-h2 {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+////////////texto en imagen/////////////////////////
+/* texto dentro de imagen */
+/* gorra*/
+.sec-destacado {
+    padding: 5% 0;
+    overflow: hidden;
+}
+
+.div-destacado {
+
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.h-destacado {
+    position: absolute;
+    font-size: calc(2rem + 0.75vmin);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
+    color: white;
+
+}
+
+
+
+/* mochila */
+.sec-destacado-2 {
+    padding: 5% 0;
+    overflow: hidden;
+}
+
+
+.div-destacado-2 {
+    padding-bottom: 5em;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.h-destacado-2 {
+    position: absolute;
+    font-size: calc(2rem + 0.75vmin);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
+    color: white;
+
+}
+
+
+//@at-root

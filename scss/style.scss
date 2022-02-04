@@ -10,10 +10,14 @@
 @import "components/divider";
 // Footer
 @import "base/footer";
-// Views 
+
+// Views //
 @import "views/index";
+@import "./components/marca";
 @import "views/local";
 @import "views/nosotros";
+// destacado
+@import "./components/destacado";
 // tienda
 @import "views/chaquetas";
 @import "views/pantalones";
