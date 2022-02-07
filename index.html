@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- evitar cache -->
 
-    <!-- meta tag -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--  -->
+
     <meta name="description"
         content="ENVÍO y DEVOLUCIÓN GRATIS | Descubre nuestras rebajas en ropa para Hombre | Últimas tendencias en Genge">
-    <!-- kw -->
+
     <meta name="keywords"
         content="ENVÍO y DEVOLUCIÓN GRATIS | Descubre nuestras rebajas en ropa para Hombre | Últimas tendencias en Genge | Chaquetas, Remeras, Pantalones y más, buenos precios, calidad.">
-    <!-- open graph -->
-    <!-- para redes socials -->
+
     <meta property="og:title" content="Genge - Tienda - Ropa Masculina">
+
+    <meta property="og:image" content="./src/assets/img/logo.png">
+
     <meta property="og:description"
         content="Nos dedicamos a las ventas de ropa para Hombres, contamos con ropa de marca, chaquetas, pantalones, camisetas y más.">
-    <!-- favicon -->
-    <!-- imagen chiquita de la pag -->
-    <link rel="shortcut icon" href="src/assets/img/ico/logo.ico" type="Genge logo">
+
+    <link rel="icon" href="./src/assets/img/ico/favicon.ico" type="image/x-icon">
 
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,13 +34,13 @@
     <!-- font -->
     <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="css/style.css" rel="stylesheet" media="screen" />
     <title>GenGe</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light">
+    <header id="header" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <!-- logo -->
             <ul id="user-navbar">
@@ -139,34 +146,28 @@
             </div>
         </div>
     </header>
-    <!-- divisor -->
 
 
-
-    <!-- Marca -->
-    <!-- <section class="">
-        <div class="intro-div">
-            <img src="src/assets/img/portada.jpg" alt="Genge" class="portada" width="100%">
-            <h1 class="intro-h">GenGe</h1>
-        </div>
-    </section> -->
-
-
+    <!-- Portada -->
     <section class="marca">
         <div class="parallax-wrapper">
             <div class="hero parallax-content">
-                <img class="hero-img" src="src/assets/img/portada.jpg" alt="Imagen portada - Marca - Genge" />
+
+                <img class="hero-img" src="./src/assets/img/portada.jpg" alt="Imagen portada - Marca - Genge" />
+
                 <div class="marca-titulo">
                     <h1>Genge</h1>
                     <p>Tienda para hombres
 
                     </p>
                     <div>
-                        <li class="text-decoration-none">
-                            <a href="./index.html#tienda">
-                                <img id="marca-bag" src="src/assets/img/svg/bag-svgrepo-com.svg" alt="">
-                            </a>
-                        </li>
+                        <div>
+                            <li class="text-decoration-none">
+                                <a href="./index.html#tienda">
+                                    <img id="marca-bag" src="./src/assets/img/svg/bag-svgrepo-com.svg">
+                                </a>
+                            </li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,67 +187,67 @@
     </section>
 
 
-
-
-
-
-
-
-
     <!-- divisor -->
     <div class="divider3"></div>
 
-    <!-- Destacado -->
-    <section id="destacado" class="container destacado">
-        <div class="row destacado-row">
-            <div class="col-lg-6 col-md-12">
-                <div class="destacado-div">
-                    <div>
-                        <li class="text-decoration-none">
-                            <a href="#!">
-                                <img class="destacado-img " src="src/assets/img/destacado/destacado.png" alt="">
-                            </a>
-                        </li>
-                    </div>
-                    <div class="destacado-h2">
-                        <h2 class="destacado-h2">OUTFIT DE LA SEMANA</h2>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 col-md-12">
-                <div class="destacado-div-2 sec-destacado">
-                    <!-- gorras -->
-                    <div id="container-destacado">
-                        <div class="div-destacado box">
-                            <li class="text-decoration-none">
-                                <a class="" href="#!">
-                                    <img class="destacado-img-2" src="src/assets/img/destacado/gorra.png" alt="">
-                                    <h2 class="h-destacado text-uppercase">Gorras</h2>
-                                </a>
-                            </li>
 
-                        </div>
-                    </div>
-                    <!-- mochilas  -->
-                    <div id="container-destacado-2">
-                        <div class="div-destacado-2 box2">
+
+    <section class="destacado">
+        <div id="destacado" class="container">
+            <div class="row destacado-row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="destacado-div">
+                        <div>
                             <li class="text-decoration-none">
                                 <a href="#!">
-                                    <img class="destacado-img-2b" src="src/assets/img/destacado/mochila.png" alt="">
-                                    <h2 class="h-destacado-2 text-uppercase">Mochilas</h2>
+                                    <img class="destacado-img " src="./src/assets/img/destacado/conjunto.png" alt="Jack & Jones
+                                    Chaleco - Look - Outfit">
                                 </a>
                             </li>
-
+                        </div>
+                        <div class="destacado-h2">
+                            <h2 class="destacado-h2">OUTFIT DE LA SEMANA</h2>
+                            </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="destacado-div-2 sec-destacado">
+                        <!-- gorras -->
+                        <div id="container-destacado">
+                            <div class="div-destacado box">
+                                <li class="text-decoration-none">
+                                    <a class="" href="#!">
+                                        <img class="destacado-img-2" src="src/assets/img/destacado/gorra.png" alt="Adidas Originals
+                                        TRUCKER - Gorra">
+                                        <h2 class="h-destacado text-uppercase">Gorras</h2>
+                                    </a>
+                                </li>
 
+                            </div>
+                        </div>
+                        <!-- mochilas  -->
+                        <div id="container-destacado-2">
+                            <div class="div-destacado-2 box2">
+                                <li class="text-decoration-none">
+                                    <a href="#!">
+                                        <img class="destacado-img-2b" src="src/assets/img/destacado/mochila.png" alt="Vans
+                                        MN OBSTACLE SKATEPACK - Mochila">
+                                        <h2 class="h-destacado-2 text-uppercase">Mochilas</h2>
+                                    </a>
+                                </li>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
+
+
 
 
 
@@ -389,7 +390,7 @@
                                         <div class="t10a">
                                             <div class="t11a txt-imag-div">
                                                 <a href="src/views/camisetas.html">
-                                                    <img class="t12a"
+                                                    <img class="t12a" alt="Ellesse - VOODOO - Camiseta estampadas"
                                                         src="./src/assets/img/camisetas/4/3c788e6c70ce4a55a3964af934c344bc.webp"
                                                         sizes="(min-width: 768px) 288px, calc(50vw - 36px)" width="300"
                                                         height="433">
@@ -413,6 +414,7 @@
                                             <div class="t11a txt-imag-div">
                                                 <a href="src/views/chaquetas.html">
                                                     <img class="t12a"
+                                                        alt="Brave Soul - MIGUEL - Chaqueta de entretiempo"
                                                         src="./src/assets/img/chaquetas/6/img01_ztat_net-a7fee901f6c647d48a0bcac45ce9e27d.png"
                                                         sizes="(min-width: 768px) 288px, calc(50vw - 36px)" width="300"
                                                         height="433">
@@ -435,7 +437,7 @@
                                         <div class="t10a">
                                             <div class="t11a txt-imag-div">
                                                 <a href="src/views/pantalones.html">
-                                                    <img class="t12a"
+                                                    <img class="t12a" alt="Pier One - Pantalones deportivos"
                                                         src="./src/assets/img/pantalones/6/img01_ztat_net-a7918305a7c74db59ffe41dcb13cd4d6.png"
                                                         sizes="(min-width: 768px) 288px, calc(50vw - 36px)" width="300"
                                                         height="433">
@@ -527,34 +529,473 @@
     </section>
 
 
-    <!-- divisor -->
-    <div class="divider"></div>
+
+
+    
+    <section class="swap">
+        <div class="custom-shape-divider-bottom-1644202765">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="swap-img-div">
+             <img class="swap-img" src="src/assets/img/Swap/calzado.gif"/>
+             
+        </div>
+        <div class="div-button-swap">
+            <button class="button">
+                <span>Gran variedad en Calzado</span>
+              </button>
+        </div>
+        <div class="custom-shape-divider-top-1644203281">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Nuevos productos -->
     <section id="nuevo" class="nuevo-section">
-        <div class="nuevo-div">
-            <img src="src/assets/img/nuevo.webp" alt="">
-            <h2 class="nuevo-h"></h2>
-        </div>
-        <div class="tienda-n">
-            <div class="grid-new">
-                <img src="src/assets/img/remera.png" alt="Remera">
-                <p>lorem is life</p>
-                <p>lorem is life</p>
-            </div>
-            <div class="grid-new">
-                <img src="src/assets/img/pantalon.png" alt="Pantalon">
-                <p>lorem is life</p>
-                <p>lorem is life</p>
-            </div>
-            <div class="grid-new">
-                <img src="src/assets/img/campera.png" alt="Campera">
-                <p>lorem is life</p>
-                <p>lorem is life</p>
-            </div>
-        </div>
 
+        <!-- Indice Nuevos mobile -->
+        <div class="divcat-m margtop">
+            <div class="divcat-m-sec padbott">
+                <!-- Elemento -->
+                <div class="tap-m-padding-one">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Camisetas
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Camisas
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Pantalones
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Buzos
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Camperas
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Canguros
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Jeans
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Chalecos
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Accesorios
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Calzado
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <!-- Elemento -->
+                <div class="tap-m-padding">
+                    <a class="tap-m-sec" href="#!" rel="">
+                        <span class="u-font u-span-nomar">
+                            <span class="u-font-p u-span-nomar u-font-tw">
+                                Shorts
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Div Nuevos -->
+        <div class="div-tienda">
+            <div class="div-tienda-b">
+                <div class="t2b">
+                    <div>
+                        <ul>
+                            <li class="txt-decoration text-decoration-none">
+                                <span class="t3b t6a-b u-font text-uppercase">
+                                    Categorias
+                                </span>
+                                <ul class="t4a">
+                                    <li class="t5a">
+                                        <a href="src/views/camisetas.html" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Camisetas
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="src/views/chaquetas.html" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Camisas
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="src/views/pantalones.html" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Pantalones
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Buzos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Camperas
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Canguros
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Jeans
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Chalecos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Accesorios
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Calzado
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="t5a">
+                                        <a href="#!" rel="">
+                                            <span class="t6a tienda-effect t6ahover">
+                                                Shorts
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- WRAP -->
+                <div class="t6a">
+                    <div class="t7a">
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img id="img-nuevo" class="img-bottom"
+                                                            alt="Remera lisa Manga corta - Azul"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-azul-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                        <!--  -->
+                                                        <img class="img-top" alt="Remera lisa Manga corta - Azul"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-azul-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera lisa Manga corta - Azul </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img class="img-bottom" alt="Remera lisa Manga corta - Celeste"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-celeste-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                        <!--  -->
+                                                        <img class="img-top" alt="Remera lisa Manga corta - Celeste"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-celeste-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera lisa Manga corta - Celeste </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img class="img-bottom align-baseline"
+                                                            alt="Remera T-shirt estampada manga corta - Verde"
+                                                            src="./src/assets/img/Nuevo/remera-t-shirt-estampada-manga-corta-verde-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+
+                                                        <!--  -->
+                                                        <img class="img-top align-baseline"
+                                                            alt="Remera T-shirt estampada manga corta - Verde"
+                                                            src="./src/assets/img/Nuevo/remera-t-shirt-estampada-manga-corta-verde-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera T-shirt estampada manga corta - Verde
+                                        </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img class="img-bottom"
+                                                            alt="Remera T-shirt estampada manga corta - Celeste"
+                                                            src="./src/assets/img/Nuevo/remera-t-shirt-estampada-manga-corta-celeste-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                        <!--  -->
+                                                        <img class="img-top"
+                                                            alt="Remera T-shirt estampada manga corta - Celeste"
+                                                            src="./src/assets/img/Nuevo/remera-t-shirt-estampada-manga-corta-celeste-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera T-shirt estampada manga corta -
+                                            Celeste </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img class="img-bottom" alt="Remera lisa Manga corta - Gris"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-gris-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                        <!--  -->
+                                                        <img class="img-top" alt="Remera lisa Manga corta - Gris"
+                                                            src="./src/assets/img/Nuevo/remera-lisa-manga-corta-gris-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera lisa Manga corta - Gris </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                        <div class="t8a">
+                            <div>
+                                <article class="t9a">
+                                    <div>
+                                        <div class="t10a">
+                                            <div class="t11a txt-imag-div">
+                                                <div class="img-nuevo">
+                                                    <a href="#!">
+                                                        <img class="img-bottom"
+                                                            alt="Remera Estampada Manga Corta - Gris"
+                                                            src="./src/assets/img/Nuevo/remera-estampada-manga-corta-gris-1.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                        <!--  -->
+                                                        <img class="img-top" alt="Remera Estampada Manga Corta - Gris"
+                                                            src="./src/assets/img/Nuevo/remera-estampada-manga-corta-gris-2.webp"
+                                                            sizes="(min-width: 768px) 288px, calc(50vw - 36px)"
+                                                            width="300" height="433">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t12b-c">
+                                        <span class="t12c-c t12c-c-style2"> Remera Estampada Manga Corta - Gris </span>
+                                        <span class="t12c-c t12c-c-style3"> 19,99 € </span>
+                                        <span class="logo-sec-nuevo txt-imag-txt-n"> Nuevo </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Elemento -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
 
 

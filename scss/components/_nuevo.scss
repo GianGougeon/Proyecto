@@ -1,0 +1,35 @@
+@import "../components/variables";
+
+
+
+.logo-sec-nuevo {
+    @include logo;
+    font-size: 1.35em;
+    color: $colores-foothead;
+}
+
+/* Imagne hover */
+img{
+    vertical-align: unset;
+}
+.img-nuevo {
+    position: relative;
+    margin: 0 auto;
+
+    height: auto;
+    width: 101%;
+}
+
+.img-nuevo img {
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: 101%;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.img-nuevo .img-top:hover {
+    opacity: 0;
+}

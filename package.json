@@ -1,7 +1,7 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto: Tienda de ropa para hombres",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

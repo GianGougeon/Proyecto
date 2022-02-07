@@ -9,9 +9,14 @@ body{
 
 
 /* --------------------- Header --------------------- */
+#header{
+    position: sticky;top: 0;
+    z-index: 99;
+}
 header {
     background-color: $colores-foothead;
-    display: inline-block
+    display: inline-block;
+    
 }
 
 #user-navbar {
