@@ -198,6 +198,13 @@ header {
   background: linear-gradient(180deg, white 0%, #ececec 100%);
 }
 
+/* gris a blanco */
+.divider4 {
+  height: 10em;
+  background: white;
+  background: linear-gradient(0deg, white 0%, #ececec 100%);
+}
+
 /* Footer pc */
 footer {
   background-color: #0d0630;
@@ -575,15 +582,13 @@ footer {
   display: block;
 }
 
+.destacado-video iframe {
+  width: 400px;
+  height: 590px;
+}
+
 .destacado-img {
   width: 110%;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   -o-transition: transform 0.2s;
@@ -607,13 +612,6 @@ footer {
   max-height: 268px;
   margin: 5em auto;
   overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .box {
@@ -653,20 +651,14 @@ footer {
   max-height: 629px;
   margin: auto;
   overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border: solid 5px red;
 }
 
 .box2 {
   width: 100%;
   max-width: 436px;
   height: 100%;
-  max-height: 629px;
+  max-height: 622px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -674,20 +666,19 @@ footer {
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  width: 100%;
+  width: 110%;
   max-width: 436px;
   height: 100%;
   max-height: 629px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box2 .destacado-img-2b:hover {
   -webkit-transform: scale(1.1);
-  /* Safari and Chrome */
   -moz-transform: scale(1.1);
-  /* Firefox */
   -ms-transform: scale(1.1);
-  /* IE 9 */
   -o-transform: scale(1.1);
-  /* Opera */
   transform: scale(1.1);
 }
 
@@ -1269,6 +1260,55 @@ footer {
   justify-content: center;
 }
 
+/* Portada/intro nuevo */
+.nuevo-section {
+  padding-top: 7em;
+}
+
+.nuevo-section-portada {
+  background-color: white;
+}
+
+.img-nuevo-portada {
+  width: 100%;
+}
+
+.img-nuevo-portada2 {
+  width: 100%;
+  box-shadow: -12px 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 991px) {
+  .img-nuevo-portada2 {
+    display: none;
+  }
+}
+.div-tienda-b-n {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.t2b-n {
+  padding-top: 24px;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .t2b-n {
+    padding-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/* tienda */
 .logo-sec-nuevo {
   font-family: "Yellowtail";
   font-weight: bold;
@@ -1320,15 +1360,15 @@ img {
 .swap-img-div {
   display: flex;
   justify-content: center;
-  display: block;
   margin: auto;
   text-align: center;
   padding: 4em;
 }
 
 .swap-img {
-  width: 40%;
+  width: 90%;
   min-width: 320px;
+  max-width: 480px;
 }
 
 .div-button-swap {
@@ -1340,7 +1380,7 @@ img {
   display: inline-block;
   border-radius: 4px;
   text-transform: uppercase;
-  font-size: 1.25em/20px;
+  font-size: 3vw;
   background-color: #0d0630;
   border: none;
   color: #FFFFFF;
@@ -1353,6 +1393,11 @@ img {
   margin: 5px;
 }
 
+@media (min-width: 480px) {
+  .button {
+    font-size: 1em;
+  }
+}
 .button span {
   cursor: pointer;
   display: inline-block;

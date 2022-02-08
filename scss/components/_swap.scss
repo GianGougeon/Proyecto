@@ -10,14 +10,14 @@ margin-bottom: 5em;
 .swap-img-div{
     display: flex;  
     justify-content: center;
-    display: block;
     margin: auto;
     text-align: center;
     padding: 4em;
 }
 .swap-img{
-    width: 40%;
+    width: 90%;
     min-width: 320px;
+    max-width: 480px;
 }
 .div-button-swap{
     display: flex;
@@ -27,7 +27,7 @@ margin-bottom: 5em;
     display: inline-block;
     border-radius: 4px;
     text-transform: uppercase;
-    font-size: 1.25em/20.00px;
+    font-size: 3vw;
     background-color: $colores-foothead;
     border: none;
     color: #FFFFFF;
@@ -40,7 +40,12 @@ margin-bottom: 5em;
     cursor: pointer;
     margin: 5px;
    }
-   
+
+@media  (min-width: 480px) {
+    .button{
+        font-size: 1em;
+    }
+}
    .button span {
     cursor: pointer;
     display: inline-block;
