@@ -1677,6 +1677,8 @@ strong {
 .flip-box-back {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
+  align-items: center;
+  padding: 0 1em;
 }
 
 /* Frente */
@@ -1704,13 +1706,11 @@ strong {
   font-size: 1em;
 }
 
-/* Style the front side */
 .flip-box-front {
   background-color: #0d0630;
   color: #8bbeb2;
 }
 
-/* Style the back side */
 .flip-box-back {
   background-color: #0d0630;
   color: #8bbeb2;
